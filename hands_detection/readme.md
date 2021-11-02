@@ -1,0 +1,27 @@
+# How to install local (Linux Debian-like)
+- Check if you have python installed
+- If not, please install.
+- When installed, please check the python version with the command:
+    - python3 --version
+- Install the package venv using the command bellow:
+    - apt install python3.#-venv (Change # with your version)
+- Go to the root directory of this project (hands_detection/.)
+- On root of this project, please execute:
+    - python3 -m venv venv
+- Check if directory venv has been created
+- Execute to activate the virtual environment the command:
+    - source venv/bin/activate
+- Check if venv appears on your terminal left indicating you activated the virtual environment
+    - Example: (venv) yourUser@yourHostname:~/code/hands_detection$
+- Execute the commands below:
+    - pip3 install numpy
+    - pip3 install opencv-python
+    - pip3 install mediapipe
+# How to execute the program
+- Go to the root of this project (hands_detection/.)
+- Execute to activate the virtual environment the command if it is not active:
+    - source venv/bin/activate
+- Execute the program:
+    - python3 executeme.py
+- To disable virtual environment, just execute:
+    - deactivate
